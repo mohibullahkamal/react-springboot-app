@@ -23,7 +23,6 @@ public class Student {
 
 
 
-
     public UUID getStudentId() {
         return studentId;
     }
@@ -46,9 +45,7 @@ public class Student {
 
 
 
-
     enum Gender {
         MALE, FEMALE
     }
-
 }
