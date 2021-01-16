@@ -1,5 +1,3 @@
 import fetch from 'unfetch';
 
-const getAllStudents = () => fetch('/students');
-
-export client;
+export const getAllStudents = () => fetch('http://localhost:8080/students');
