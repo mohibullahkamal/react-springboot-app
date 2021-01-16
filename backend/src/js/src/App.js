@@ -8,25 +8,35 @@ class App extends Component {
       students: []
    }
 
+   componentDidMount () {
+      this.fetchStudents();
+   }
+
    fetchStudents = () => {
       getAllStudents()
          .then(res => res.json()
-         .then(students => {
-            this.setState({
-               students
-            })
-         }
-      ));
+         .then(stdts => {
+            this.setState({ stdts });
+         }));
    }
 
-// function App() {
    render() {
-      // getAllStudents()
-      // .then(res => res.json()
-      // .then(students => console.log(students)
-      // ));
+      this.fetchStudents;
       return <h1>Hello World Spring Boot and React!!</h1>
    }
 }
 
 export default App;
+
+
+
+
+
+// function App() {
+   // render() {
+      // getAllStudents()
+      // .then(res => res.json()
+      // .then(students => console.log(students)
+      // ));
+//    }
+// }
