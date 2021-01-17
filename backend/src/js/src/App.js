@@ -4,29 +4,31 @@ import { getAllStudents } from './client';
 
 class App extends Component {
 
-   state = {
-      students: []
-   }
+   state = { students: [] }
 
-   componentDidMount () {
-      this.fetchStudents();
-   }
+   componentDidMount () { this.fetchStudents(); }
 
    fetchStudents = () => {
       getAllStudents()
          .then(res => res.json()
-         .then(stdts => {
-            this.setState({ stdts });
-         }));
+         .then(stds => {
+            console.log(stds)
+            this.setState({ stds }); }));
    }
 
    render() {
-      this.fetchStudents;
-      return <h1>Hello World Spring Boot and React!!</h1>
-   }
+      const { stds } = this.props;
+      if (stds && stds.length) {
+         stds.map((std, id) => {
+            return ( <div> <h1>{std.studentId}</h1> </div> )
+      })}
+      return <h1>Students</h1> }
 }
 
 export default App;
+
+
+
 
 
 
