@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import { getAllStudents } from './client';
+import { Home } from './home';
 
 class App extends Component {
 
+   num = 10;
    state = { students: [] }
 
    componentDidMount () { this.fetchStudents(); }
@@ -22,7 +24,13 @@ class App extends Component {
          stds.map((std, id) => {
             return ( <div> <h1>{std.studentId}</h1> </div> )
       })}
-      return <h1>Students</h1> }
+      return (
+         <div>
+            <Home num={this.num}></Home>
+            <h1>Students</h1>
+         </div>
+      )
+   }
 }
 
 export default App;
