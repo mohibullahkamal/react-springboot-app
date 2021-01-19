@@ -28,6 +28,12 @@ class App extends Component {
          <div>
             <Home num={this.num}></Home>
             <h1>Students</h1>
+            <Home num={this.num}></Home>
+            <h1>Students</h1>
+            <Home num={this.num}></Home>
+            <h1>Students</h1>
+            <Home num={this.num}></Home>
+            <h1>Students</h1>
          </div>
       )
    }
