@@ -37,11 +37,6 @@ export default App;
 
 
 
-
-
-
-
-
 // function App() {
    // render() {
       // getAllStudents()
