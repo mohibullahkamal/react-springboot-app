@@ -13,24 +13,13 @@ import java.util.UUID;
 @RequestMapping("students")
 public class StudentController {
 
-    @GetMapping
-    public List<Student> getAllStudents() {
-        return List.of(
-                new Student(UUID.randomUUID(), "Mohibullah", "Kam", "mo@gmail.com", Student.Gender.MALE),
-                new Student(UUID.randomUUID(), "Imon", "Bay", "imon@gmail.com", Student.Gender.MALE),
-                new Student(UUID.randomUUID(), "Mamun", "Al", "mamun@gmail.com", Student.Gender.MALE),
-                new Student(UUID.randomUUID(), "Anja", "Brown", "anja@gmail.com", Student.Gender.FEMALE)
-
-        new Student(UUID.randomUUID(), "Mohibullah", "Kam", "mo@gmail.com", Student.Gender.MALE),
-                new Student(UUID.randomUUID(), "Imon", "Bay", "imon@gmail.com", Student.Gender.MALE),
-                new Student(UUID.randomUUID(), "Mamun", "Al", "mamun@gmail.com", Student.Gender.MALE),
-                new Student(UUID.randomUUID(), "Anja", "Brown", "anja@gmail.com", Student.Gender.FEMALE)
-
-        new Student(UUID.randomUUID(), "Mohibullah", "Kam", "mo@gmail.com", Student.Gender.MALE),
-                new Student(UUID.randomUUID(), "Imon", "Bay", "imon@gmail.com", Student.Gender.MALE),
-                new Student(UUID.randomUUID(), "Mamun", "Al", "mamun@gmail.com", Student.Gender.MALE),
-                new Student(UUID.randomUUID(), "Anja", "Brown", "anja@gmail.com", Student.Gender.FEMALE)
-
-        );
-    }
+   @GetMapping
+   public List<Student> getAllStudents() {
+      return List.of (
+         new Student(UUID.randomUUID(), "Mohibullah", "Kam", "mo@gmail.com", Student.Gender.MALE),
+         new Student(UUID.randomUUID(), "Imon", "Bay", "imon@gmail.com", Student.Gender.MALE),
+         new Student(UUID.randomUUID(), "Mamun", "Al", "mamun@gmail.com", Student.Gender.MALE),
+         new Student(UUID.randomUUID(), "Anja", "Brown", "anja@gmail.com", Student.Gender.FEMALE)
+      );
+   }
 }
