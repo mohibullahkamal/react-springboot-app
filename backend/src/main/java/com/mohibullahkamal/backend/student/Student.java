@@ -187,31 +187,3 @@ public class Student {
 //     }
 
 
-
-//     public UUID getStudentId() {
-//         return studentId;
-//     }
-
-//     public String getFirstName() {
-//         return firstName;
-//     }
-
-//     public String getLastName() {
-//         return lastName;
-//     }
-
-//     public String getEmail() {
-//         return email;
-//     }
-
-//     public Gender getGender() {
-//         return gender;
-//     }
-
-
-
-//     enum Gender {
-//         MALE, FEMALE
-//     }
-// }
-
